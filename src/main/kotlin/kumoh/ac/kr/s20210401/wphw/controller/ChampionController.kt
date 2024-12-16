@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController
 @CrossOrigin(origins=["https://wphwBackend.netlify.app"])
 class ChampionController(private val service: ChampionService) {
 
-    @GetMapping("/champ")
+    @GetMapping("/")
     fun getAllChampions(): List<Champion> = service.getAllChampions()
 }
