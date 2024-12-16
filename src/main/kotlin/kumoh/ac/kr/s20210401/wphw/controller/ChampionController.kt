@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@CrossOrigin(origins=["https://wphwbackend.netlify.app"])
+@CrossOrigin(origins=["https://wphwbackend.netlify.app/"])
 class ChampionController(private val service: ChampionService) {
 
     @GetMapping("/")
