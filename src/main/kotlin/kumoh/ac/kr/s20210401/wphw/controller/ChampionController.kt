@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@CrossOrigin(origins=["http://localhost:3000"])
+@CrossOrigin(origins=["https://wphwBackend.netlify.app"])
 class ChampionController(private val service: ChampionService) {
+
     @GetMapping("/champ")
     fun getAllChampions(): List<Champion> = service.getAllChampions()
 }
